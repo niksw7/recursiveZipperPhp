@@ -1,7 +1,6 @@
 
 
 
-
 // anew line is added
 function unzipfiles($srczip,$destzip)
 {
@@ -17,7 +16,7 @@ $zip = new ZipArchive;
 			//echo 'insid foreach    '.'=='.substr($file,-3,3).'<br/>';
 		if(substr($file,-3,3)=="zip")
 		{
-			
+			//this is  a comment to just check the working.
 			//echo 'src1='."$destzip.'/'.$file".'<br/>dest1='."$destzip/".substr($file , 0, strlen($file)-4  );
 			unzipfiles($destzip.'/'.$file, $destzip.'/'.substr($file , 0, strlen($file)-4  ) ) ;
 			
